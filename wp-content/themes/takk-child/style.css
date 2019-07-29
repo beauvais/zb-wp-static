@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700|Gentium+Book+Basic|Quicksand:300");
+h1 {font-family: "Playfair Display SC",serif;font-weight: 700;}
+h2 {font-family: "Playfair Display SC",serif;font-weight: 400;}
+p {font-family: "Gentium Book Basic",serif;font-weight: 400;}
+.header {background-color: rgba(231,231,231,.3);}
+.textual-logo {font-family: "Playfair Display SC",serif;font-weight: 400;}
+.bg-cover-img .main-title {background-color: rgba(231,231,231,.3);max-width: 100%;width: 100%;font-family: "Quicksand",sans-serif;font-weight: 300;font-style: normal;}

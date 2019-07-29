@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
+
+<channel>
+	<title>open graph protocol &#8211; Zach Beauvais</title>
+	<atom:link href="https://beggingaquestion.com/archives/tag/open-graph-protocol/feed/" rel="self" type="application/rss+xml" />
+	<link>https://beggingaquestion.com/</link>
+	<description>blogging perspective</description>
+	<lastBuildDate>Wed, 10 Feb 2016 15:03:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+<site xmlns="com-wordpress:feed-additions:1">39858737</site>	<item>
+		<title>Facebook and the Open Graph: good for Linked Data?</title>
+		<link>https://beggingaquestion.com/archives/facebook-and-the-open-graph-good-for-linked-data/</link>
+				<comments>https://beggingaquestion.com/archives/facebook-and-the-open-graph-good-for-linked-data/#comments</comments>
+				<pubDate>Wed, 05 May 2010 18:25:33 +0000</pubDate>
+		<dc:creator><![CDATA[Zach]]></dc:creator>
+				<category><![CDATA[From Nodblog]]></category>
+		<category><![CDATA[f8]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[graph]]></category>
+		<category><![CDATA[open]]></category>
+		<category><![CDATA[open graph]]></category>
+		<category><![CDATA[open graph api]]></category>
+		<category><![CDATA[open graph protocol]]></category>
+		<category><![CDATA[privacy]]></category>
+
+		<guid isPermaLink="false">http://blogs.talis.com/nodalities/?p=3740</guid>
+				<description><![CDATA[<p>Originally appeared on Nodalities Blog: http://blogs.talis.com/nodalities &#124;This post will feature in Nodalities Magazine issue 10. In April, I was watching the twitterverse explode during the Facebook&#8217;s f8&#8230;</p>
+<p>The post <a rel="nofollow" href="https://beggingaquestion.com/archives/facebook-and-the-open-graph-good-for-linked-data/">Facebook and the Open Graph: good for Linked Data?</a> appeared first on <a rel="nofollow" href="https://beggingaquestion.com/">Zach Beauvais</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><strong>Originally appeared on Nodalities Blog: http://blogs.talis.com/nodalities</strong></p>
+<p><strong>|This post will feature in Nodalities Magazine issue 10.</strong></p>
+<hr />
+<p>In April, I was watching the twitterverse explode during the Facebook&#8217;s f8 conference, as a steady stream of links and gasps and applause and intentions to delete profiles poured out. My initial reaction to quickly-scanned third-hand reports was essentially: &#8220;Oh no.&#8221; The message I was getting was that personal information would be be made more public, and that more places would start sporting the little fb: &#8220;like&#8221; box you see on sites using Facebook Connect. I was concerned because there have been many conflicting messages around <a href="http://beggingaquestion.com/wp-content/uploads/2010/05/fbnoprivacy">facebook and privacy</a>, and this movement to include a wider presence online would essentially pull more people into a huge walled garden.</p>
+<h2 id="facebook_links_data">Facebook Links Data?</h2>
+<p>Watch the f8 <a href="http://beggingaquestion.com/wp-content/uploads/2010/05/feightlive">video sessions</a>, though, and some interesting things begin to emerge. The main announcement at f8 is an update to Facebook&#8217;s API. Indeed, it wasn&#8217;t so much an update as a rewrite, moving from an older and complicated SOAP architecture with Facebook Connect to a more RESTful approach, giving services a simpler and more straightforward way to interact with content within Facebook using http. OK, so this isn&#8217;t particularly ground-breaking, nor is it very exciting in itself. What is far more interesting, is that Facebook&#8217;s engineers are using this word <em><a href="http://beggingaquestion.com/wp-content/uploads/2010/05/Graph_(mathematics)">graph</a></em> to describe their ecosystem with the launch of the <strong>Open Graph API</strong>.</p>
+<p>Firstly, their new Open Graph API is built to enable social plugins which let users on other sites pull content into facebook. So, little &#8220;like&#8221; boxes will let someone authenticated on facebook but viewing, for example, a movie site click to identify a film they, well&#8230; like. This information is recorded on their Facebook profile. But the interesting thing here is that the social plugin is identifying items and objects within pages, and the engineers who introduced the plugins are talking about linking to these individual things. They identify the fact that when someone indicates that they like a movie, that&#8217;s exactly what they&#8217;re doing. They&#8217;re not &#8220;liking&#8221; the page which contains the review, but the film itself. These social plugins tell Facebook that a person is expressing some kind of relationship with objects from the wider web. They talk about these people (Facebook users), and the things they&#8217;re interacting with (content, objects&#8230; <em>things</em>), as existing like points in a graph. There are people are objects, and there are relationships between these nodes. In essence, they&#8217;re talking about linking data.</p>
+<p>To make this possible, they&#8217;ve written the <a href="http://beggingaquestion.com/wp-content/uploads/2010/05/opengraphprotocol.org">Open Graph Protocol</a>, based on RDFa. Site owners can begin marking-up their content, flagging their pages as Open Graph objects, that Facebookers can start to like. The Protocol contains a vocabulary of object types, and addresses physical location and contact information. So, I can now type in a few lines of metadata in my header, and start declaring the objects in my content. It&#8217;s all starting to sound very Linked Data, isn&#8217;t it? The <a href="http://beggingaquestion.com/wp-content/uploads/2010/05/fbLODmap">Tetherless World blog</a> even has a post showing a mapping between the Open Graph Protocol and RDF, exposing metadata to the wider Linked Open Data cloud. The long and short if this is that anyone who wants people to be able to join their content with the ecosystem of facebook users can do so using a very simple semantic markup process.</p>
+<p>So, Facebook&#8217;s nearly half-a-billion users will soon start to make use of semantic links, and millions of sites will begin to mark-up their content using Linked Data. Indeed, they had a reported 50,000 sites implement social plugins <a href="http://bit.ly/fb50k">within the first week!</a> This is properly exciting, because it will dump billions of triples out there on the web, and give more developers a boost in dealing with machine-readable information. It hasn&#8217;t, however, completely negated my initial feeling about Facebook and the sprinkling of the web with thousands and thousands of likes.</p>
+<h2 id="but8230">But&#8230;</h2>
+<p>Many people have renewed their concerns of Facebook&#8217;s stance on privacy. Some of the Open Graph API-accessible fields are now defaulted to be public until a user opts-out. Marshall Kirkpatrick talks about the  <a href="http://beggingaquestion.com/wp-content/uploads/2010/05/facebook_centralization.php">vulnerability of this centralisation</a>. Despite the more &#8220;open&#8221; direction in which the Open Graph points, it&#8217;s very clear that all this data—users&#8217; own graphs of likes and relationships—will be a valuable asset, and facebook holds the keys to this personal data. They&#8217;ve already begun partnership deals with Microsoft, Yelp and Pandora; so users&#8217; data will start to flow more freely between Facebook-selected organisations.</p>
+<p>Liz Gannes over on gigaom points out that facebook is making itself a <a href="http://beggingaquestion.com/wp-content/uploads/2010/05/gigaomfb">single point of failure for the web</a>, and illustrates in another post that a facebook outage on 23rd April also<a href="http://beggingaquestion.com/wp-content/uploads/2010/05/gigaomoutage"> took down partner-site plugins</a>. Robert Scoble, while  admiring their ambition also points out that the move requires a lot of trust in Facebook. We need to trust facebook with our own personal information, and trust it to look after the information we&#8217;re feeding it about our interests, relationships and tastes. It also raises questions about security: the stakes are higher if an account is hacked, or (as happened to the Scobleizer himself) disabled.</p>
+<h2 id="thoughts">My Thoughts:</h2>
+<p>So, the main impetus for using the Open Graph Protocol is to tie in with the Facebook ecosystem. This is not a Linked Data evangelism project, or the combined efforts of thousands of Semantic Web developers, but the logical move of a huge company to better manage their data. They&#8217;ll be creating billions of nodes on a huge, social graph; and for developers the initial purpose will be to join a group, and cash in on a quick win (if you happen to have use for social networking in your app/service/site.) We&#8217;ll see that little &#8220;like&#8221; button appear all over the place, even on sites which seem a bit odd (Share your next auto check-up on Facebook!) as the bandwagon sets off.</p>
+<p>This means we&#8217;ll start seeing a <strong>lot</strong> of RDFa-like semantic metadata on pages all over the web, and this increase will be almost exclusively using JUST the Open Graph. But it will mean more folks will be asking for RDFa, and more developers will begin learning it as a strings to their bows. I wonder how long it&#8217;ll take before they start asking what else they can do with all this graph-data? Teaching people the value of machine-readable data (through a popular, specific application like Facebook) has the benefit of increasing developer knowledge and inquisitiveness.</p>
+<p>This could be catalytic: allowing a rapid change in the direction of the Semantic Web. From a Linked Data perspective, though, I think a lot of this RDFa will be &#8220;wasted&#8221; as it&#8217;s implemented only for the purpose of joining in with the FB sphere, and is under-utilised. But, I think the interesting stuff will emerge as more innovators quickly find the limitations of Facebook&#8217;s controlled vocabulary and data-hoarding ambition and begin to see the potential the bigger Graph brings to their repertoires. What happens when thousands of developers are taught something that&#8217;s by definition boundless?</p>
+<p>So, we&#8217;re left with a question of what we&#8217;ll build, and what the Linked Data community does in reaction. For my part, I think the most important message to raise is to mix your data freely. When people begin to see the existing ecosystem of Linked Data, and that it&#8217;s not just Facebook&#8217;s own-branded metadata, we&#8217;ll start to see innovative mashing, and thousands of new services. What will you build?</p>
+<p>The post <a rel="nofollow" href="https://beggingaquestion.com/archives/facebook-and-the-open-graph-good-for-linked-data/">Facebook and the Open Graph: good for Linked Data?</a> appeared first on <a rel="nofollow" href="https://beggingaquestion.com/">Zach Beauvais</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://beggingaquestion.com/archives/facebook-and-the-open-graph-good-for-linked-data/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+						<post-id xmlns="com-wordpress:feed-additions:1">3740</post-id>	</item>
+	</channel>
+</rss>
